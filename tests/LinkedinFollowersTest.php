@@ -2,9 +2,9 @@
 
 namespace MarshmallowPackages\LinkedinFollowers\Tests;
 
-use TypeError;
 use MarshmallowPackages\LinkedinFollowers\LinkedinFollowers;
 use MarshmallowPackages\LinkedinFollowers\LinkedinFollowersHelper;
+use TypeError;
 
 class LinkedinFollowersTest extends TestCase
 {
