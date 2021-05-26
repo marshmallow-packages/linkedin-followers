@@ -1,24 +1,25 @@
 {
-    "name": "vendor_slug/package_slug",
-    "description": ":package_description",
+    "name": "marshmallow-packages/linkedin-followers",
+    "description": "A simple Laravel package to get the amount of followers from a LinkedIn page.",
     "keywords": [
-        ":vendor_name",
+        "marshmallow-packages",
         "laravel",
-        "package_slug"
+        "linkedin-followers"
     ],
-    "homepage": "https://github.com/vendor_slug/package_slug",
+    "homepage": "https://github.com/marshmallow-packages/linkedin-followers",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Stef van Esch",
+            "email": "stef@marshmallow.dev",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.0",
-        "spatie/laravel-package-tools": "^1.4.3",
-        "illuminate/contracts": "^8.37"
+        "guzzlehttp/guzzle": "^7.3",
+        "illuminate/contracts": "^8.37",
+        "spatie/laravel-package-tools": "^1.4.3"
     },
     "require-dev": {
         "brianium/paratest": "^6.2",
@@ -30,13 +31,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "MarshmallowPackages\\LinkedinFollowers\\": "src",
+            "MarshmallowPackages\\LinkedinFollowers\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "MarshmallowPackages\\LinkedinFollowers\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -50,10 +51,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "MarshmallowPackages\\LinkedinFollowers\\LinkedinFollowersServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "LinkedinFollowers": "MarshmallowPackages\\LinkedinFollowers\\LinkedinFollowers"
             }
         }
     },
