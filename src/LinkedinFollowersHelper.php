@@ -23,7 +23,7 @@ class LinkedinFollowersHelper
     public function get(): self
     {
         $this->response = Http::get(
-            Str::of($this->base_path)->replace(':company_id', $this->id)
+            (string) Str::of($this->base_path)->replace(':company_id', $this->id)
         );
 
         return $this;
