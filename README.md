@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/marshmallow-packages/linkedin-followers/Check%20&%20fix%20styling?label=code%20style)](https://github.com/marshmallow-packages/linkedin-followers/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/marshmallow-packages/linkedin-followers.svg?style=flat-square)](https://packagist.org/packages/marshmallow-packages/linkedin-followers)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+A simple Laravel package to get the amount of followers from a LinkedIn page. You just run `LinkedinFollowers::of(13027923)->followers();` and you have the amount of followers for the provided company id.
 
 ## Installation
 
