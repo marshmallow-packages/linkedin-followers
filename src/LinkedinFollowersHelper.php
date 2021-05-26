@@ -2,9 +2,9 @@
 
 namespace MarshmallowPackages\LinkedinFollowers;
 
-use Illuminate\Support\Str;
-use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Client\Response;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Str;
 
 class LinkedinFollowersHelper
 {
@@ -17,6 +17,7 @@ class LinkedinFollowersHelper
     public function of(int $company_id): self
     {
         $this->id = $company_id;
+
         return $this;
     }
 
@@ -33,12 +34,14 @@ class LinkedinFollowersHelper
     {
         $match = $this->get()->match();
         $result = $match[1][0];
+
         return intval($result);
     }
 
     public function match(): array
     {
         preg_match_all($this->regularExpression(), $this->getResponse()->body(), $matches);
+
         return $matches;
     }
 

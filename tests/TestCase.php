@@ -3,8 +3,8 @@
 namespace MarshmallowPackages\LinkedinFollowers\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use MarshmallowPackages\LinkedinFollowers\LinkedinFollowersServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
