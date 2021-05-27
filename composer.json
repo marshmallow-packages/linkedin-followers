@@ -1,5 +1,5 @@
 {
-    "name": "marshmallow-packages/linkedin-followers",
+    "name": "marshmallow/linkedin-followers",
     "description": "A simple Laravel package to get the amount of followers from a LinkedIn page.",
     "keywords": [
         "marshmallow-packages",
